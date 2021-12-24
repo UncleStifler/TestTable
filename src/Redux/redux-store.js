@@ -7,4 +7,4 @@ let reducersSet = combineReducers({
 });
 
 export let store = createStore(reducersSet, applyMiddleware(thunk));
-window.store = store;
+// window.store = store;

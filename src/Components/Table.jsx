@@ -21,7 +21,6 @@ const columns = [
                              confirm,
                              clearFilters,
                          }) => {
-            console.log(selectedKeys)
             return (
                 <>
                     <Input
@@ -89,7 +88,7 @@ const TableTest = () => {
 
 
     const data = useSelector((state) => {
-        return state.usersReducer.data123
+        return state.usersReducer.dataBase
     })
 
     const dataSource = data.map(item => ({...item, key: item.id}))

@@ -1,14 +1,14 @@
 import {usersAPI} from "../api/users-api";
 
 const initialState = {
-    data123: []
+    dataBase: []
 }
 
 
 export const usersReducer = (state = initialState, action) => {
     switch (action.type) {
         case 'SET-USERS': {
-            return {...state, data123: action.arrayUsers}
+            return {...state, dataBase: action.arrayUsers}
         }
         default:
             return state
