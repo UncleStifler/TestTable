@@ -84,8 +84,7 @@ const columns = [
 ]
 
 
-const TableTest = () => {
-
+const TableTest = React.memo(() => {
 
     const data = useSelector((state) => {
         return state.usersReducer.dataBase
@@ -100,7 +99,7 @@ const TableTest = () => {
             columns={columns}
         />
     );
-};
+});
 
 export default TableTest;
 
